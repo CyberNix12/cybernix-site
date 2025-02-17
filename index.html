@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybernix Techkraft</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/cybernix.png" type="image/png">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary fs-4" href="#">Cybernix Techkraft</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section d-flex align-items-center position-relative" style="background-image: url('assets/cybernix.png'); background-size: cover; background-position: center;">
+    <!-- Overlay -->
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    
+    <div class="container text-center text-light position-relative">
+      <h1 class="display-4 fw-bold">Your Trusted Web Developer</h1>
+      <p class="lead mt-3">With over 2 years of experience, I build modern, scalable websites for your business success.</p>
+      <a href="#about" class="btn btn-primary btn-lg shadow mt-4 rounded-pill">Learn More</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title text-primary">About Me</h2>
+      <p class="text-muted mt-3">
+        Hi, I'm a freelancer web developer with over 2 years of experience in designing and developing modern, responsive websites.
+        Based in Ligung, Majalengka, I aim to bring your ideas to life with the latest technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-primary text-center">Our Projects</h2>
+      <p class="text-muted text-center mt-2">Explore our latest projects showcasing innovation and creativity.</p>
+      <div class="row mt-5 g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Background Remover</h5>
+              <p>Scalable Background Remover platform.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Cashier App</h5>
+              <p>Financial tracking Cashier app.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">School Monitoring System</h5>
+              <p>Helping schools with monitoring.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Embed Section -->
+  <section class="py-5 bg-light shadow-sm">
+    <div class="container text-center">
+      <h2 class="section-title text-primary">Weather App</h2>
+      <div class="embed-responsive embed-responsive-16by9 shadow-sm rounded overflow-hidden">
+        <iframe src="http://cybernix-app.wuaze.com/" width="100%" height="400" style="border: none;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light shadow-sm">
+    <div class="container text-center">
+      <h2 class="section-title text-primary">Blog App</h2>
+      <div class="embed-responsive embed-responsive-16by9 shadow-sm rounded overflow-hidden">
+        <iframe src="https://blog-nextjs-cybernix.vercel.app/" width="100%" height="400" style="border: none;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section py-5 bg-muted text-dark">
+    <div class="container text-center">
+      <div class="footer-logos d-flex flex-wrap justify-content-center align-items-center gap-4">
+        <!-- Framework Icons -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap" title="Bootstrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" title="React">
+        <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" title="Angular">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js" title="Vue.js">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" title="Laravel">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" title="Tailwind CSS">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" alt="Django" title="Django">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="Ruby on Rails" title="Ruby on Rails">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg" alt="Spring" title="Spring">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" alt="Flutter" title="Flutter">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js" title="Express.js">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt="ASP.NET" title="ASP.NET">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/JQuery_logo_text.svg" alt="jQuery" title="jQuery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" alt="WordPress" title="WordPress">
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="footer-socials d-flex justify-content-center gap-4 mt-4">
+        <a href="https://wa.me/6285136993771" target="_blank" title="WhatsApp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40" height="40">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61571704176361" target="_blank" title="Facebook">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="40" height="40">
+        </a>
+        <a href="https://www.instagram.com/cybernix_techkraft?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" width="40" height="40">
+        </a>
+        <a href="https://github.com/CyberNix12" target="_blank" title="GitHub">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="40" height="40">
+        </a>
+      </div>
+      
+      <p class="mt-4">&copy; 2025 Cybernix Techkraft. All Rights Reserved. Based in Ligung, Majalengka.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

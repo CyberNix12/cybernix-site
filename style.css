@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background-image: url("http://cybernix.wuaze.com/assets/cybernix.png");  /* Jika file CSS ada di root */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* Cards (Features & Services) */
+.feature-card,
+.service-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover,
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Section */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  background: #f9f9f9;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-card .project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 123, 255, 0.85); /* Blue overlay */
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .project-info {
+  opacity: 1;
+}
+
+.project-card .project-info h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .project-info p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.project-card .project-info a {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-icon {
+  font-size: 30px;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: #f8f9fa; /* Light background */
+  color: #212529; /* Dark text for contrast */
+}
+
+.footer-logos img {
+  width: auto;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.footer-logos img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.footer-section p:hover {
+  color: #007bff; /* Interactive hover color */
+}
+
+/* Contact Section */
+#contact {
+ 
+  color: white;
+  padding: 60px 0;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.contact-buttons .btn {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.contact-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.contact-buttons .btn i {
+  font-size: 1.5rem;
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: white;
+  border: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-instagram:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.btn-instagram i {
+  font-size: 1.2rem;
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  .marquee {
+    display: flex;
+    animation: marquee 15s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
